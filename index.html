@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="bar" id="bar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar">
+            <img src="songs&imgs/MicrosoftTeams-image.png" class="logo" alt="#">
+            <ul class="main-navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="specification.html">SPECIFICATION</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="connect.html">CONNECT</a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+
+            <div class="responsive-navbar" id="responsive-navbar">
+                <div class="responsive-navbar-wrapper">
+                  <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="specification.html">SPECIFICATION</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="connect.html">CONNECT</a></li>
+                  </ul>
+                </div>
+
+            <div class="cross" id="cross">
+                <i class="fas fa-times"></i>
+            </div>
+              </div>
+
+        <div class="content">
+            <div class="content-wrapper">
+            <div class="left-col">
+                <h1>THE <br>REAL <br>SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="songs&imgs/play.png" id="icon" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <audio id="mySong">
+        <source src="songs&imgs/John Denver ♥ Take Me Home, Country Roads (The Ultimate Collection) with.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- <footer class="footer-part" style="margin-left: 0.2%; background-image: linear-gradient(90deg, #EDA7A7 50%, #C1E4DE 50%);">
+        <div class="container-footer">
+      <h5 class="footerr">Copyright ©2021 All rights reserved | This template is made with love by <span class="sharan">Sharan</span></h5>
+  </div>
+    </footer> -->
+
+    <!-- <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            mySong.play();
+        }
+    </script> -->
+
+    <script src="home.js"></script>
+
+</body>
+</html>
