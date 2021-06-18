@@ -161,8 +161,8 @@ body {
 
 .container-about{
     background-image: linear-gradient(90deg, #FBC2BD 50%, #C0E5DE 50%);
-    height: 95vh;
-    overflow: hidden;
+    height: 100vh;
+    /* overflow: hidden; */
 }
 
 .about-part {
@@ -253,9 +253,9 @@ body {
 
 .container-specification {
     background-image: linear-gradient(90deg, #FBC2BD 50%, #C0E5DE 50%);
-    height: 95vh;
+    height: fit-content;
     /* width: auto; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -310,7 +310,7 @@ body {
 
 .product-container {
     background-image: linear-gradient(90deg, #FBC2BD 50%, #C0E5DE 50%);
-    height: 95vh;
+    height: fit-content;
     /* width: auto; */
     /* overflow: hidden; */
 }
@@ -331,7 +331,7 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
-img{
+.card-wrapper img{
     width: 100%;
     display: block;
 }
@@ -500,7 +500,7 @@ img{
 }
 
 @media screen and (min-width: 992px){
-    .card{
+   .card-wrapper .card{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
@@ -526,14 +526,20 @@ img{
         height: fit-content;
     }
 }
+
+/* @media  screen and (max-width: 600px) {
+    .product-container {
+        height: fit-content;
+    }
+} */
 /* taken-end */
 
 
 /* Connect-part */
 .connect-container {
     background-image: linear-gradient(90deg, #FBC2BD 50%, #C0E5DE 50%);
-    height: 95vh;
-    overflow: hidden;
+    height: fit-content;
+    /* overflow: hidden; */
     
 }
 
@@ -633,6 +639,207 @@ input[type=text], select, textarea {
   /* taken-part-end */
 
 
+  /* cart-section */
+
+  .cart-container {
+    background: #ddd;
+    min-height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold
+  }
+
+  .cart-container .card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+    
+}
+.button-cart {
+    text-align: center;
+}
+
+.card .button-cart .btn {
+    border: none;
+    border: 2px solid;
+    border-color: #FBC2BD;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #FBC2BD;
+    transition: ease-out 0.3s;
+    outline: none;
+    
+}
+.card .button-cart .btn:hover {
+    box-shadow: inset 150px 0 0 0 #FBC2BD;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+   .cart-container .card {
+        margin: 3vh auto
+    }
+}
+
+.cart {
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem
+}
+
+@media(max-width:767px) {
+    .cart {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem
+    }
+}
+
+.summary {
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65)
+}
+
+@media(max-width:767px) {
+    .summary {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem
+    }
+}
+
+.summary .col-2 {
+    padding: 0
+}
+
+.summary .col-10 {
+    padding: 0
+}
+
+.row {
+    margin: 0
+}
+
+.title b {
+    font-size: 1.5rem
+}
+
+.main {
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%
+}
+
+.col-2,
+.col {
+    padding: 0 1vh
+}
+
+a {
+    padding: 0 1vh
+}
+
+.close {
+    margin-left: auto;
+    font-size: 0.7rem
+}
+
+.card img {
+    width: 3.5rem
+}
+
+.back-to-shop {
+    margin-top: 4.5rem
+}
+
+h5 {
+    margin-top: 4vh
+}
+
+hr {
+    margin-top: 1.25rem
+}
+
+form {
+    padding: 2vh 0
+}
+
+select {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.button-cart .btn {
+    background-color: #000;
+    border-color: #000;
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border-radius: 0
+}
+
+.button-cart .btn:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none
+}
+
+.button-cart .btn:hover {
+    color: white
+}
+
+a {
+    color: black
+}
+
+a:hover {
+    color: black;
+    text-decoration: none
+}
+
+#code {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center
+}
+
+
 /* Responsive-part */
 
 @media (max-width: 1000px) {
@@ -669,7 +876,7 @@ input[type=text], select, textarea {
         justify-content: center;
         align-items: flex-end;
         height: 68vh;
-        margin-top: -225px;
+        margin-top: -155px;
         
     }
     .content .left-col h1 {
@@ -717,7 +924,7 @@ input[type=text], select, textarea {
     .content {
         
         height: 50vh;
-        margin-top: -60px;
+        margin-top: -17px;
         
     }
     .content .left-col h1 {
@@ -738,7 +945,7 @@ input[type=text], select, textarea {
 }
 
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .bar, .cross {
        
         right: 15%;
@@ -762,7 +969,7 @@ input[type=text], select, textarea {
         
         
 }
-}
+} */
 
 @media (max-width: 500px){
     .content {
@@ -836,7 +1043,7 @@ input[type=text], select, textarea {
     .content {
         
         height: 50vh;
-        margin-top: -52px;
+        margin-top: 10px;
         
     }
     .content .left-col h1 {
@@ -853,7 +1060,7 @@ input[type=text], select, textarea {
 }
 }
 
-@media (max-width: 411px){
+/* @media (max-width: 411px){
     .content {
         
         height: 50vh;
@@ -872,7 +1079,7 @@ input[type=text], select, textarea {
         
         
 }
-}
+} */
 
 @media (max-width: 375px){
     .content {
@@ -885,6 +1092,13 @@ input[type=text], select, textarea {
         font-size: 50px;
         line-height: 50px;
         margin-right: 9px;
+        
+    }
+
+    .content {
+        
+        height: 50vh;
+        margin-top: 27px;
         
     }
 
@@ -919,6 +1133,23 @@ input[type=text], select, textarea {
 }
 
 /* About-responsive-part */
+
+@media (max-width: 1700px) {
+    @keyframes bigone {
+        0% {letter-spacing:0px;}
+        60% {letter-spacing:30px;}
+        80% {letter-spacing:30px;}
+      }
+}
+
+
+@media (max-width: 1440px) {
+    @keyframes bigone {
+        0% {letter-spacing:0px;}
+        60% {letter-spacing:20px;}
+        80% {letter-spacing:20px;}
+      }
+}
 
 @media (max-width:1300px) {
    
@@ -1052,14 +1283,38 @@ input[type=text], select, textarea {
 @media (max-width: 1500px) {
     .right-side-specification .specification-img img {
         height: 500px;
+        margin-right: 100px;
     }
     
+}
+@media (max-width: 1440px) {
+    .right-side-specification .specification-img img {
+        height: 500px;
+    }
+    .left-side-specification h4 {
+        font-size: 16px;
+        color: #5f5f5f;
+    
+    }
+    .left-side-specification p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: justify;
+        color: #5f5f5f;
+    
+    }
+    .right-side-specification {
+        /* flex: 0.5; */
+        margin-left: 45%;
+        margin-top: 0;
+    }
+
 }
 
 
 @media (max-width: 1300px) {
     .right-side-specification .specification-img img {
-        height: 400px;
+        height: 500px;
     }
     .left-side-specification h4 {
         font-size: 16px;
@@ -1088,8 +1343,11 @@ input[type=text], select, textarea {
         margin-top: 0;
     }
     .right-side-specification .specification-img img {
-        height: 400px;
+        height: 500px;
         -webkit-box-reflect: left;
+        
+            margin-right: 10px;
+        
     }
     
     .left-side-specification {
@@ -1196,6 +1454,8 @@ input[type=text], select, textarea {
     
     }
 }
+
+
 
 @media (max-width: 600px) {
     .container-specification {
@@ -1338,8 +1598,17 @@ input[type=text], select, textarea {
     display: grid;
     place-items: center;
     background-image: linear-gradient(90deg, #FBC2BD 50%, #C0E5DE 50%);
-    height: 5vh;
-    overflow: hidden;
+    /* height: fit-content; */
+    /* overflow: hidden; */
     font-size: 13px;
     color: #5f5f5f;
+    padding: 5px;
+    text-align: center;
+}
+.sharan {
+    text-decoration: underline;
+}
+.sharan:hover {
+    color: white;
+    cursor: pointer;
 }
